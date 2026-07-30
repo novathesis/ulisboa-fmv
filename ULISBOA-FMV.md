@@ -1,8 +1,8 @@
-# Abstract: ulisboa-fmv-novathesis-vA.B.C
+# Abstract: novathesis-ulisboa-fmv-v8.0.0
 
 This is a customized LaTeX template for theses and reports at **Faculdade de Medicina Veterinária da Universidade de Lisboa (ULISBOA FMV)**, following the most recent [ULISBOA FMV guidelines (in Portuguese)](https://www.fmv.ulisboa.pt/pt/area-academica). 
 
-This template is a streamlined and fine-tuned version of the robust **NOVAthesis framework (vA.B.C)**, trimmed down and optimized to provide ULISBOA FMV students with a streamlined experience, meeting ULISBOA FMV's academic formatting standards without the complexity of the original multi-institution template. 
+This template is a streamlined and fine-tuned version of the robust **NOVAthesis framework (v8.0.0)**, trimmed down and optimized to provide ULISBOA FMV students with a streamlined experience, meeting ULISBOA FMV's academic formatting standards without the complexity of the original multi-institution template. 
 
 ### Key Features:
 
