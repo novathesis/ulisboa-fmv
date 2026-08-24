@@ -12,13 +12,15 @@
 %% METADATA & GLOBAL PROPERTIES
 %%=======================================================================
 
-\options{/novathesis,
+% Only XeLaTeX/LuaLaTeX are accepted (uses an OpenType-only font)
+\AddValidProcessor{ulisboa/fmv}{lua,xe}
+\AddValidDegree{ulisboa/fmv}{phd,msc}
+
 % ULISBOA/FMV
-  ulisboa/fmv/scientificarea/.new choice       = {C, MF, PASA, SA},
-  ulisboa/fmv/embargo/period/.new choice       = {I, 6, 12},
-  ulisboa/fmv/embargo/justification/.new value = {Justification for the temporary embargo.},
-  ulisboa/fmv/reproduction/.new choice         = {I, P, N},
-}
+\NTOptNewChoice{ulisboa/fmv/scientificarea}{C, MF, PASA, SA}{C}
+\NTOptNewChoice{ulisboa/fmv/embargo/period}{I, 6, 12}{I}
+\NTOptNewValue{ulisboa/fmv/embargo/justification}{Justification for the temporary embargo.}
+\NTOptNewChoice{ulisboa/fmv/reproduction}{I, P, N}{I}
 
 \ntsetup{style/font=calibri}
 \ntsetup{style/chapter=fmv}
@@ -218,8 +220,7 @@
 %% FRONT MATTER CONFIGURATION
 %%=======================================================================
 
-\options{/@nt/print/frontmatter/final = 
-  {%
+\@nt@printorder@set{frontmatter_final}{%
     statement,        % The statement page
     dedication,       % (*) Print the dedication
     acknowledgements, % (*) Print the acknowledgments
@@ -228,18 +229,15 @@
     aidisclose,       % AI disclosure statement
     alllistof,        % Print all the listof defined in “6_list_of.tex”
     % myprintglossaries, % Print the Glossary, Acronyms, Symbols, etc…
-  }
 }
 
-\options{/@nt/print/frontmatter/provisional =
-  {
+\@nt@printorder@set{frontmatter_provisional}{%
     dedication,      % (*) Print the dedication
     acknowledgements,% (*) Print the acknowledgments
     quote,           % (*) Print the quote
     abstracts,       % Print abstracts in multiple languages.
     alllistof,       % Print all the listof defined in “6_list_of.tex”
     % printglossaries, % Print the Glossary, Acronyms, Symbols, etc…
-  }
 }
 
 
